@@ -1,0 +1,1 @@
+Hello I am JOZAGUTS, I intend to build a "Rock Paper Scissors" using the knowledge acquired at MicroVerse (JavaScript) I hope my work be of your liking
