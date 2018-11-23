@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: rock;
+    src: url(/assets/fonts/jrfocout.ttf);
+}
+@font-face{
+    font-family: paper;
+    src: url(/assets/fonts/cutthepaper.ttf);
+}
+@font-face{
+    font-family: scissors;
+    src: url(/assets/fonts/scissors.ttf);
+}
+.container{
+    width: 100%;
+    background-color: tomato;
+
+}
+header{
+    width: 90%;
+    margin: auto auto;
+    display: block;
+    /* padding-top: 2%; */
+    text-align: center;
+}
+header h1{
+    width: 100%;
+    word-break: break-all;
+  
+}
+.rock{
+    font-family: "rock";
+    color: black;
+}
+.paper{
+    font-family: "paper";
+    font-size: 48px;
+    color: black;   
+}
+.scissors{
+    font-family: "scissors";
+    font-size: 48px;
+    color: black;   
+}
+
