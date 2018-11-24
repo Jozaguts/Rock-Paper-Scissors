@@ -51,7 +51,7 @@ let scoreReset=()=>{
 
 let game =()=>{
     for (let index = 0; index < 5; index++) {
-        let playerSelection = prompt('Enter ROCK, PAPER or SCISSORS').toLowerCase();
+        let playerSelection = prompt('Enter ROCK, PAPER or SCISSORS \n remember that everything happens inside console, so run the debugger').toLowerCase();
         let computerSelection = computerPlay();
         let gameRound = playRound(playerSelection,computerSelection);
         (gameRound.includes('DRAW') || gameRound.includes('invalid choice')) ? playerScore+=0 : 
