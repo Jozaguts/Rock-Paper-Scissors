@@ -1,16 +1,16 @@
-let playerScore =0;
+let playerScore =0; /* variable para llevar el conteo de los marcadores */
 let computerScore=0;
 
-
-function computerPlay() {
-    var randomChoice = Math.floor((Math.random() * 3) + 1);
-    var computerSelection= "";
-    switch (randomChoice) {
-        case 1:
-            systemChoice = "rock"
-            break;
+let computerSelection= ""; /*variable para capturar la opción del sistema */
+function computerPlay() {/*función para crear elegir una opción de forma aleatoria  */
+    const randomChoice = Math.floor((Math.random() * 3) + 1); /* generamos un numero al azar del 1 al 3 */
+    /* evaluamos randomChoice (1 2 3) de pendiendo del numero se realiza una acción   */
+    switch (randomChoice) { 
+        case 1: /* si randomChoice es igual a 1 entonces el valor de systemChoice es Rock */
+            systemChoice = "rock" /* aquí se cambia el valor a systemChoice */
+            break; /* después de hacer el cambio a la variable el break te manda al Return */
         case 2:
-            systemChoice = "paper"
+            systemChoice = "paper" 
             break;
         case 3:
             systemChoice = "scissors"
@@ -18,13 +18,10 @@ function computerPlay() {
         default:
             break;
     }
-    return computerSelection;
+    return systemChoice; /* return básicamente regresa el valor de systemChoice y como el valor es definido por el randomChoice la respuesta siempre sera aleatoria   */
 }
 
-// playerSelection=prompt("Choice an option (Rock Paper Scissors)");
-
-
-let playRound = (playerSelection, computerSelection) => { //playround func
+let playRound = (playerSelection, computerSelection) => { //play round func
     let result = '';
 
     switch(computerSelection) {
